@@ -137,7 +137,8 @@
 }
 
 - (BOOL)showSettingsIcon {
-    return self.config.showSettingsIcon;
+    //Returning false as we don't want to show settings to the user
+    return false;
 }
 
 - (void)setShowSettingsIcon:(BOOL)showSettingsIcon {
@@ -202,7 +203,8 @@
 }
 
 - (BOOL)shouldShowBackButton {
-    if (self.config.shouldDisplayBackButton || [SFUserAccountManager sharedInstance].idpEnabled) {
+    // Always return true as we want to show the back button
+    if (self.config.shouldDisplayBackButton || [SFUserAccountManager sharedInstance].idpEnabled || true) {
         return YES;
     }
     NSInteger totalAccounts = [SFUserAccountManager sharedInstance].allUserAccounts.count;
