@@ -1184,6 +1184,8 @@ SFSDK_USE_DEPRECATED_END
     [self.sdkManagerFlow handleUserDidSwitch:fromUser toUser:toUser];
 }
 
+- (void)didStopLoginFlow {}
+
 #pragma mark - SFSecurityLockout
 
 - (void)passcodeFlowWillBegin:(NSNotification *)notification {

@@ -358,6 +358,9 @@ static NSMutableDictionary *analyticsManagerList = nil;
     [[SFApplicationHelper sharedApplication] endBackgroundTask:self.task];
     self.task = UIBackgroundTaskInvalid;
 }
+
+- (void)didStopLoginFlow{}
+
 @end
 
 @implementation SFSDKAnalyticsTransformPublisherPair

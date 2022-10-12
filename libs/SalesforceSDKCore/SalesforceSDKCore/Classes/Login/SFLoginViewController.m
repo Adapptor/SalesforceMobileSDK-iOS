@@ -358,7 +358,7 @@
         self.previousUserAccount = fromUser;
 }
 
-- (void)didStopLoginFlow;
+- (void)didStopLoginFlow {}
 
 
 @end
