@@ -407,6 +407,10 @@ static NSString * const kSFGenericFailureAuthErrorHandler = @"GenericFailureErro
             completionBlock(result);
         }];
     }
+    
+    [self enumerateDelegates:^(id <SFUserAccountManagerDelegate> delegate) {
+        [delegate didStopLoginFlow];
+    }];
   
 }
 

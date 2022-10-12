@@ -213,6 +213,11 @@ NS_SWIFT_NAME(UserAccountManagerDelegate)
          didSwitchFromUser:(SFUserAccount *)previousUserAccount
                     toUser:(nullable SFUserAccount *)currentUserAccount NS_SWIFT_NAME(userAccountManager(accountManager:didSwitchFrom:to:));
 
+/**
+ * Called when login flow has been cancelled by the user.
+ */
+- (void)didStopLoginFlow;
+
 @end
 
 NS_SWIFT_NAME(UserAccountPersister)
